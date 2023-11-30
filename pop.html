@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link href="estilo.css" rel="stylesheet">
+        <title>INDISPONIVEL!</title>
+
+        <script>
+            function pisca() {
+            var f = document.getElementById('Alerta_Indisponivel');
+            setInterval(function() {
+                f.style.visibility = (f.style.visibility == 'hidden' ? '': 'hidden');
+            }, 150);
+            }
+        </script>
+    </head>
+
+    <body onload="pisca();">
+        <div class="alerta">
+        <img src="insights1.png" class="img_alerta">
+        <p class="txt_alerta">
+        Não Disponivel!!!<br>
+        Avisaremos Quando Estiver Disponivel!!
+        </p>
+        <p class="preco_promocao" id="preco_promocao">Em Breve!</p>
+        </div>
+    </body>
+</html>

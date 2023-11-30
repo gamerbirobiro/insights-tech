@@ -1,0 +1,107 @@
+<HTML>
+    <head>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="shortcut icon" href="icon.ico">
+        <title>Produtos Insights</title>
+
+        <script>
+            var win = null;
+            function PopAlerta(){
+            pagina="pop.html"
+            var left = (window.innerWidth-700)/3;
+            var top = (window.innerHeight-700)/3;
+            settings = 'toolbar=no, location=no, directories=no, status=no, menubar=no,width=400,height=400, left='+left+',top='+top+",scrollbars=no,resizable=no, copyhistory=yes";
+            win = window.open(pagina, "Alerta_Indisponivel", settings);
+            }
+        </script>
+
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo_caixa">
+                <img src="insights2.png" alt="Pizzaria seu pizza" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Produtos.html">Produtos</a></li>
+                        <li><a href="cadastro.html">Cadastro / Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--parte do cardapio-->
+        <h1 class="titulo-cardapio">Produtos:</h1>
+
+        <p class="texto-cardapio">Veja a baixo os nossos Porudtos:</p>
+
+        
+        <div class="cardapio">
+         
+            <ul class="pizza-list">
+                <li class="pizza-item">
+                    <h1 class="mussarela-titulo">Teclado Gamer</h1>
+                    <img src="1.png" alt="teclado" class="img-mussarela">
+                    <p>Teclado Mecanico Gamer,<br> Philco - PKB92</p>
+                    <p>R$290,00</p>
+                    <button onclick="JavaScript:PopAlerta();">Comprar</button>
+                </li>
+            
+                <li class="pizza-item">
+                    <h1 class="frango-titulo">Gabinete Gamer</h1>
+                    <img src="2.png" alt="gabinete" class="img-frango">
+                    <p>Gabinete Gamer <br>Hoopson - CPU017G</p>
+                    <p>R$450,00</p>
+                    <br/><br/>
+                    <button onclick="JavaScript:PopAlerta();">Comprar</button>
+                </li>
+            
+                <li class="pizza-item">
+                    <h1 class="portuguesa-titulo">Cadeira Gamer</h1>
+                    <img src="3.png" alt="Cadeira" class="img-portuguesa">
+                    <p>Cadeira Gamer Reclinavel<br> Best - G600</p>
+                    <p>R$820,00</p>
+                    <br/><br/>
+                    <button onclick="JavaScript:PopAlerta();">Comprar</button>
+                </li>
+                </ul>
+            <!--fim dos 3 primeiros Produtos-->
+
+                <!--inico dos 3 ultimos produtos Produtos-->
+            <ul class="pizza-list">
+                <li class="pizza-item">
+                    <h1 class="mussarela-titulo">Placa de Vídeo</h1>
+                    <img src="4.png" alt="teclado" class="img-mussarela">
+                    <p>Asus GeForce<br>RTX-3060</p>
+                    <p>R$2900,00</p>
+                    <br/><br/>
+                    <button onclick="JavaScript:PopAlerta();">Comprar</button>
+                </li>
+            
+                <li class="pizza-item">
+                    <h1 class="frango-titulo">Mouse Pad</h1>
+                    <img src="5.png" alt="gabinete" class="img-frango">
+                    <p>Extra Grande de tecido <br>Logitech</p>
+                    <p>R$150,00</p>
+                    <button onclick="JavaScript:PopAlerta();">Comprar</button>
+                </li>
+            
+                <li class="pizza-item">
+                    <h1 class="portuguesa-titulo">Memoria RAM</h1>
+                    <img src="6.png" alt="Cadeira" class="img-portuguesa">
+                    <p>Team Group 16GB<br> T-Force</p>
+                    <p>R$200,00</p>
+                    
+                    <button onclick="JavaScript:PopAlerta();">Comprar</button>
+                </li>
+            </ul>
+            <!--fim dos 3 primeiros Produtos-->
+        </div>
+    </main>
+    <footer >
+        <img class="logo_footer" src="insights2.png" alt="logo">
+             <p class="copyright">&copy; todos os direitos reservados para a INSIGHTS TECH</p>
+ </footer>
+    </body>
+</HTML>

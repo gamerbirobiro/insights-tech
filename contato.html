@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="icon.ico">
+    <title>Insights tech contato</title>
+</head>
+    <body>
+        <header>
+            <div class="logo_caixa">
+                <img src="insights2.png" alt="Insights" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Produtos.html">Produtos</a></li>
+                        <li><a href="cadastro.html">Cadastro / Login</a></li>
+                        <li><a href="grafico.html">Grafico</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <p style="text-align: right; margin-right: 10px;">
+            <script type="text/javascript">
+            document.write (dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
+            </script>
+        </p>
+        <p class="contato_texto">
+            Preencha os campos abaixo com a sua dúvida, reclamação ou elogio à nossa equipe.
+        </p>
+        <p class="contato_texto">
+            Nosso horário de funcionamento: Terça à Domingo das 18h às 23h
+            <a class="whatsapp-link" href="http:wa.me/5599111112222" target="_blank">
+                <i class="fa fa-whatsapp"></i></a> (11) 4444-8888
+         </p>
+        <form name="fmrContato" method="get" action="mailto:test@gmail.com" target="_blank">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nomesobrenome">* Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                <label for="email">* E-mail</label>
+                <input type="email" id="email" name="" class="input-padrao" required placeholder="nome@gmail.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="" class="input-padrao" required placeholder="(XX) XXXX-XXXX">
+
+                <label for="mensagem">* Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                <label for="contato">Como prefere o seu contato?
+                    <input type="radio" value="radio-mail" name="Contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                </label>
+                
+                <br>
+                <label for="horario"Qual o motivo do seu contato?>
+                    <select>
+                        <option>Selecione</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Elogio</option>
+                        <option>Reclamação</option>
+                    </select>
+                </label>
+                <br>
+            </fieldset>
+
+            <label><input type="checkbox" class="chk"> Gostaria de receber nossas novidades por e-mail? </label>
+
+            <input type="submit" value="Enviar formulário" class="contato_enviar">
+        </form>
+    </body>
+</html>

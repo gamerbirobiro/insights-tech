@@ -1,0 +1,326 @@
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #2c2b2a;
+}
+
+header{
+    background-color: #424242;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    top: 115;
+
+    color: red;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15;
+
+}
+
+nav a {
+    color: #AF3AFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    color : #FF914D;
+    text-decoration: underline;
+}
+
+.logo_caixa{
+    position: relative;
+    width: 940px;
+    margin: auto;
+}
+
+
+.logo{
+    width: 50%;
+
+}
+
+
+.pizza{
+    width: 100%;
+    
+
+}
+
+/*sessão sbre a pizzaria*/
+
+.sobre{
+    width: 10%;
+    float: left;
+    margin: 0 20px;
+}
+
+.titulo-pizza{
+    clear: left;
+    text-align: center;
+    font-size: 3em; 
+    margin: 0;
+    padding: 50 0 30 0;/*topo, direita, baixo, esquerda*/
+    color: aliceblue;
+}
+
+.sobre-pizzaria{
+    background-color: #2c2b2a;
+    width: 80%;
+    padding-left: 200;
+    padding-bottom: 20px;
+}
+
+.sobre-pizzaria p{
+    color: aliceblue;
+}
+
+.titulo-padrao{
+    
+    text-align: center;
+    font-size: 3em; 
+    margin: 0;
+    padding: 30 0 30 0; /*topo, direita, baixo, esquerda*/
+}
+
+/*estiliação da sessão mapa*/
+
+.mapa {
+    text-align: center;
+    background: linear-gradient( #2c2b2a, #424242);
+}
+
+.mapa p{
+    color: aliceblue;
+}
+
+.mapa h1{
+    color: aliceblue;
+}
+
+/*sessão beneficios*/
+
+.beneficios {
+    background-color: #424242;
+}
+
+.beneficios h1{
+    color: aliceblue;
+}
+
+.lista-beneficios{
+list-style: "✅";
+width: 20%;
+display: inline-block;
+vertical-align: top;
+padding-left: 35%;
+color: aliceblue;
+}
+
+.lista-beneficios li {
+    line-height: 2;
+    
+
+}
+.lista-beneficios li :first-child{
+    font-weight: bold;
+}
+
+.img-beneficios{
+    width: 180px ;
+    opacity: 1;
+    transition: 400ms;
+    
+       
+}
+
+.img-beneficios  :hover{
+        opacity: 0.7;
+
+
+}
+
+
+.conteudo-beneficios{
+    width: 100%;
+}
+
+
+
+
+.video-pizza{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*etilização do footer */
+
+footer{
+    text-align: center;
+    margin: 0 auto ;
+    background-color: black;
+    padding: 40 0 30 0;
+}
+
+.copyright{
+    color: #FFFFBB;
+    font-size: 12;
+    margin-top: 20;
+}
+/*-------------------------------------PRODUTOS----------------------*/
+
+.titulo-cardapio{
+    color: #FF914D;
+    display: flex;
+    align-items: center;
+
+}
+
+.titulo-cardapio::before{
+    content: "💻";
+    margin-left: 10;
+
+}
+
+.texto-cardapio{
+    text-align: center;
+    color: #FF009D;
+}
+
+
+.pizza-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150;
+}
+
+.pizza-item {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+    border: 2px solid #AF3AFF;
+    border-radius: 30px;
+    text-align: center;
+    transition: border-color 0.3s;
+    width: 300px;
+    height: 400px;
+}
+
+.pizza-item:hover{
+    border-color:  #FF914D;
+    
+}
+
+.pizza-item h1 {
+    font-size: 18px;
+    margin: 0;
+    color: aliceblue;
+}
+
+.pizza-item img {
+    max-width: 200px;
+}
+
+.pizza-item p {
+    font-weight: bold;
+    color: aliceblue;
+}
+
+button{
+    background-color: #FF914D;
+    border-color: #FF009D;
+    border-radius: 30px;
+    width: 120px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #CB6CE6;
+    border-color: #5CE1E6;
+    transition: 0.5s;
+}
+
+/*-------------------------------------Pop----------------------*/
+
+.img_alerta{
+    width: 400px;
+    height: 400px;
+    top: 0px;
+}
+
+.alerta p{
+    color: #FFFFBB;
+}
+/*-------------------------------------Pop----------------------*/
+.titulo{
+    color: aliceblue;
+    text-align: center;
+}
+.grafico{
+    align-items: center;
+    justify-content: center;
+    left: 400px;
+}
+.grafico p{
+    color: #FFFFBB;
+}
+/*-------------------------------------contato----------------------*/
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: aliceblue;
+}
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+    background-color: #424242;
+}
+.chk{
+    text-align: center;
+    margin: 20px 0;
+}
+.contato_enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: #FF914D;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.contato_enviar:hover{
+    background: #CB6CE6;
+    transform: scale(1.04)
+}
+p{
+    color: #FFFFBB;
+}
