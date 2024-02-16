@@ -265,7 +265,8 @@ button:hover{
 .alerta p{
     color: #FFFFBB;
 }
-/*-------------------------------------Pop----------------------*/
+
+/*-------------------------------------Gráfico----------------------*/
 .titulo{
     color: aliceblue;
     text-align: center;
@@ -278,49 +279,32 @@ button:hover{
 .grafico p{
     color: #FFFFBB;
 }
-/*-------------------------------------contato----------------------*/
-form{
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-bottom: 20px;
+
+/*-------------------------------------Tabela----------------------*/
+.titulo{
+    color: aliceblue;
+    text-align: center;
 }
-form label, form legend{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
+.tabela{
+    align-items: center;
+    justify-content: center;
+    left: 400px;
+}
+.tabela p{
+    color: #FFFFBB;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 10 150 10 150;
+}
+td, th {
+    border: 1px solid #424242;
+    text-align: left;
+    padding: 8px;
     color: aliceblue;
 }
-fieldset{
-    width: 75%;
-    padding-left: 5%;
-    margin-bottom: 2%;
-}
-.input-padrao{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 85%;
+tr:nth-child(even) {
     background-color: #424242;
-}
-.chk{
-    text-align: center;
-    margin: 20px 0;
-}
-.contato_enviar{
-    width: 40%;
-    padding: 15px 0;
-    background: #FF914D;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    transition: 0.5s all;
-    cursor: pointer;
-}
-.contato_enviar:hover{
-    background: #CB6CE6;
-    transform: scale(1.04)
-}
-p{
-    color: #FFFFBB;
 }
