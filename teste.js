@@ -2,15 +2,25 @@
 var clientes = document.querySelectorAll(".cliente")
 
 //passa por cada encomenda, calculando o valor da repetição
-for (var count=0; count < clientes.length; count++){
+for (var count = 0; count < clientes.length; count++){
     //captura a quantidade encomendada
     var qtde = clientes[count].querySelector(".qtd").textContent;
 
     //captura o valor unitario do produto
     var unitario = clientes[count].querySelector(".valor").textContent;
 
-    //Calcula o valor total da encomenda
-    clientes[count].querySelector(".total").textContent = calculaTotal(qtde,unitario);
+    //muda a cor caso o valor seja nulo
+    if(qtde < 1 || isNaN(qtde)){
+        clientes[count].querySelector(".qtd").textContent = "Qtde inválida";
+        clientes[count].querySelector(".qtd").style.color="red";
+    }else{ 
+        clientes[count].querySelector(".total").textContent = calculaTotal(qtde,unitario);
+    } 
+    if (unitario < 1 || isNaN(qtde)){
+        clientes[count].querySelector(".valor").textContent = "valor inválido";
+        clientes[count].style.backgroundColor = "red";
+        clientes[count].querySelector(".qtd").style.color="white";
+    }
 }
 
 //função para calcular o valor total da encoomenda
@@ -20,3 +30,4 @@ function calculaTotal(qtde,unitario){
 
     return total;
 }
+
