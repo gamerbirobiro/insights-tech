@@ -14,7 +14,9 @@ for (var count = 0; count < clientes.length; count++){
         clientes[count].querySelector(".qtd").textContent = "Qtde inválida";
         clientes[count].querySelector(".qtd").style.color="red";
     }else{ 
+        clientes[count].querySelector(".valor").textContent = formataValor(parseFloat(unitario));
         clientes[count].querySelector(".total").textContent = calculaTotal(qtde,unitario);
+        
     } 
     if (unitario < 1 || isNaN(qtde)){
         clientes[count].querySelector(".valor").textContent = "valor inválido";
@@ -28,6 +30,26 @@ function calculaTotal(qtde,unitario){
     var total = 0;
     total=qtde*unitario;
 
-    return total;
+    return formataValor(total);
 }
+
+function valida(qtde,unitario){
+    var qtd = 0;
+    
+}
+
+function formataValor(valor){
+
+    return valor.toLocaleString("pt-br", {style: 'currency', currency: 'BRL'});
+}
+
+//funcão de adicionar linha
+
+// var botaoAdicionar = document.querySelector("#adicionar-encomenda");
+
+// botaoAdicionar.addEventListener("click", function(event){
+//     event.preventDefault();
+//     console.log("Agora sim, o botão foi clicado!");
+// });
+
 

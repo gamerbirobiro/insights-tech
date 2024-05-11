@@ -194,6 +194,8 @@ footer{
 .texto-cardapio{
     text-align: center;
     color: #FF009D;
+    font-size: 26;
+    font-style: bold;
 }
 
 
@@ -211,7 +213,7 @@ footer{
     display: inline-block;
     margin-right: 20px;
     padding: 20px;
-    border: 2px solid #AF3AFF;
+    border: 3px solid #AF3AFF;
     border-radius: 30px;
     text-align: center;
     transition: border-color 0.3s;
@@ -240,8 +242,8 @@ footer{
 }
 
 button{
-    background-color: #FF914D;
-    border-color: #FF009D;
+    background:linear-gradient(90deg, #FF914D, #AF3AFF) ;
+    /* border-color: #FF009D; */
     border-radius: 30px;
     width: 120px;
     height: 30px;
@@ -249,8 +251,8 @@ button{
 }
 
 button:hover{
-    background-color: #CB6CE6;
-    border-color: #5CE1E6;
+    background:linear-gradient(90deg,#AF3AFF, #FF914D ) ;
+    /* border-color: #5CE1E6; */
     transition: 0.5s;
 }
 
@@ -284,11 +286,12 @@ button:hover{
 .titulo{
     color: aliceblue;
     text-align: center;
+    margin-top: 50px;
 }
 .tabela{
     align-items: center;
     justify-content: center;
-    left: 400px;
+    /*left: 400px;*/
 }
 .tabela p{
     color: #FFFFBB;
@@ -297,7 +300,8 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 80%;
-    margin: 10 150 10 150;
+    margin-left: 10%;
+    /* margin: 10 150 10 150; */
 }
 td, th {
     border: 1px solid #424242;
@@ -307,4 +311,83 @@ td, th {
 }
 tr:nth-child(even) {
     background-color: #424242;
+}
+
+/*-------------------------------------adicionar na tebela----------------------*/
+form{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 60 150 10 150;
+    margin-left: 10%;
+}
+label{
+    margin: 10 2 10 60;
+    color: aliceblue;
+    font-weight: bold;
+}
+.input-padrao{
+    background-color:#424242;
+    border-style: none;
+    width: 220px;
+    height: 30px;
+}
+.botaoAdicionar{
+    background:linear-gradient(90deg, #FF914D, #AF3AFF);
+    border-color: #AF3AFF;
+    border-radius: 5px;
+    border-style:double;
+    top: 200px;
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.botaoAdicionar:hover{
+    width: 170px;
+    height: 70px;
+    transition: 0.5s;
+}
+.legenda{
+    margin-top: 50px;
+    font-size: 30;
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}
+.linha{
+    width: 80%;
+    align-self: center;
+}
+select{
+    background-color:#424242;
+    border-style: none;
+    width: 220px;
+    height: 30px;
+}
+
+/*-------------------------------------apagar na tebela----------------------*/
+
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
+
+/*-------------------------------------filtra na tebela----------------------*/
+
+#filtrar-tabelaa{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+    background-color:#424242;
+    border-style: none;
+    margin-left: 190px;
+}
+
+.T{
+    margin-left: 190px;
+}
+
+.invisivel{
+    display: none;
 }

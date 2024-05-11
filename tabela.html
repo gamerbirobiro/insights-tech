@@ -20,48 +20,58 @@
                     </div>
                 </header>
 
-        <h1 class="titulo">Tabela de Vendas.</h1>
-
+        <h1 class="titulo">Tabela de Vendas</h1>
+        <hr size="5" width="80%" align="center" noshade class="linha">
+        <label for="filtrar-tabela" class="T">Filtrar</label>
+        <br>
+        <input type="text" name="filtro" id="filtrar-tabelaa" placeholder="Digite o nome do cliente" >
         
 
-            <table>
+            <table id="tabela-clientes">
                 <tr class="descricao">
+                    <th>Cliente</th>
                     <th>Quantidade</th>
                     <th>Produto</th>
                     <th>Valor</th>
                     <th>Total</th>
                 </tr>
                 <tr class="cliente">
+                    <td class="cli">João</td>
                     <td class="qtd">0</td>
                     <td class="desc">Mouse Pad</td>
                     <td class="valor">0</td>
                     <td class="total">0</td>
                 </tr>
                 <tr class="cliente">
+                    <td class="cli">Julia</td>
                     <td class="qtd">3</td>
                     <td class="desc">Placa de Vídeo</td>
                     <td class="valor">2900</td>
                     <td class="total">0</td>
                 </tr>
                 <tr class="cliente">
+                    <td class="cli">Anna</td>
                     <td class="qtd">2</td>
                     <td class="desc">Memoria RAM</td>
                     <td class="valor">200</td>
                     <td class="total">0</td>
                 </tr>
                 <tr class="cliente">
+                    <td class="cli">Erick</td>
                     <td class="qtd">0</td>
                     <td class="desc">Teclado Gamer</td>
                     <td class="valor">290</td>
                     <td class="total">0</td>
                 </tr>
                 <tr class="cliente">
+                    <td class="cli">Emily</td>
                     <td class="qtd">1</td>
                     <td class="desc">Gabinete Gamer</td>
                     <td class="valor">450</td>
                     <td class="total">0</td>
                 </tr>
                 <tr class="cliente">
+                    <td class="cli">Anderson</td>
                     <td class="qtd">1</td>
                     <td class="desc">Cadeira Gamer</td>
                     <td class="valor">820</td>
@@ -69,6 +79,45 @@
                 </tr>
             </table>
 
+            <h1 class="legenda">Adicionar nova encomenda</h1>
+            <hr size="5"  noshade class="linha">
+
+            <div class="adP">
+                <form id="form-adiciona" name="fmrContato" method="get">
+                    
+                        
+                        <label for="nomecliente"> Nome:</label>
+                        <input type="text" id="nomecliente" name="" class="input-padrao" required placeholder="Digite o nome do(a) cliente">
+                        
+                        <label for="qtdeE"> Quantidade:</label>
+                        <input type="text" id="qtdeE" name="" class="input-padrao" required placeholder="Digite a quantidade emcomendada">
+
+                        <label for="prodE"> Produto:</label>
+                        <select id="prodE">
+                            <option>Selecione</option>
+                            <option>Mouse Pad</option>
+                            <option>Placa de Vídeo</option>
+                            <option>Memoria RAM</option>
+                            <option>Gabinete Gamer</option>
+                            <option>Cadeira Gamer</option>
+                        </select>
+                        
+                        
+                        <label for="Vunitario"> Valor:</label>
+                        <input type="text" id="Vunitario" name="" class="input-padrao" required placeholder="Digite o valor Unitário do produto">
+                        
+                    
+                    <br>
+                    <input type="submit" value="Adicionar" class="botaoAdicionar" id="Adicionar-encomenda">
+
+                </form>
+            </div>
+
+
+
         <script src="teste.js"></script>
+        <script src="BotaoAdicionar.js"></script>
+        <script src="remover.js"></script>
+        <script src="filtrar.js"></script>
     </body>
 </html>
